@@ -76,7 +76,6 @@ nav ul li a {
         left: -100%;
         text-align: center;
         transition: all .5s;
-        padding: -10px;
     }
     nav ul li {
         display: block;
@@ -248,11 +247,12 @@ header {
 } 
 
 footer {
+    display: block;
     background: #F59D37;
     color: #020301; 
     height: 100px;
     width: 100%;
-    padding: 30px;
+    padding: 10px;
     margin-top: 100px; 
 } 
 
@@ -276,7 +276,7 @@ footer {
 
 
 .sec2 {
-    margin-top: 250px;
+    margin-top: 150px;
 }
 
 .mw {
@@ -314,12 +314,21 @@ footer {
     color:#FDFDFD; 
 } 
 
+.mig {
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -40px;
+    margin-top: 60px;
+    height: 300px;
+} 
+
 .box1 {
     background:#FDFDFD; 
     color:#020301;
     border: 1px solid #EB7023;
     width: 60%;
-    margin-left: 10%;
+    margin-left: auto;
     margin-right: auto;
     min-height: 350px;
     padding: 40px;
@@ -339,7 +348,7 @@ footer {
     font-family: 'baskerville-urw, serif';
     font-size: 30px;
     margin-top: -100px;
-    margin-bottom: 80px;
+    margin-bottom: 10px;
     text-transform: uppercase;
 }
 
@@ -415,17 +424,22 @@ input[type=text], select, textarea {
 }
   
 input[type=submit] {
-    background-color: #F59D37;
-    font-family: 'baskerville-urw, serif';
-    font-size: 15px;
-    color: #020301;
-    padding: 15px 32px; 
     border: none;
-    cursor: pointer;
+    color: #020301;
+    background:#F59D37;
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
     position: relative;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, 20%);
+    transform: translate(-50%, 80%);
+    font-family: 'baskerville-urw, serif';
+    cursor: pointer;
+    transition-duration: 0.4s;
+    margin-bottom: 20px;
 }
   
 input[type=submit]:hover {
@@ -443,7 +457,7 @@ input[type=submit]:hover {
 .cm {
     font-family: 'baskerville-urw, serif';
     font-size: 30px;
-    margin-top: 10%;
+    margin-top: 60px;
     text-align: center;
     color: #020301;
 }
@@ -462,9 +476,11 @@ input[type=submit]:hover {
 }
 
 .pfooter {
+    display: block;
     color: #020301;
     text-align: center;
     margin-top: -60px;
+    padding: 10px;
     font-family: 'baskerville-urw, serif';
     font-size: 16px;
 }
@@ -548,4 +564,156 @@ input[type=submit]:hover {
 
 .adobeskills {
     text-align: center;
+}
+ 
+.karrebæksminde {
+    display: block;
+    height: 400px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    margin-top: 60px;
+}
+
+.foodapp {
+    display: block;
+    height: 400px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+}
+
+.datingapp {
+    display: block;
+    height: 400px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+}
+
+.selvportraet {
+    display: block;
+    height: 400px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+}
+
+.plakat {
+    display: block;
+    height: 400px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+}
+
+.sprite {
+	width: 400px;
+	height: 400px;
+	background: url('billeder/project1.png') 0 0 no-repeat;
+	animation: play 4s steps(40) infinite;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+}
+@keyframes play {
+	0%{background-position: 0px;}
+   100% { background-position: -16000px; }
+}
+
+.mw1 {
+    font-family: 'baskerville-urw, serif';
+    font-size: 30px;
+    color: #020301;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.mw2 {
+    font-size: 18px;
+    font-family: 'baskerville-urw, serif';
+    color:#020301;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+@media (max-width: 1000px) {
+    .karrebæksminde {
+        height: 300px;
+    }
+
+    .foodapp {
+        height: 300px;
+    }
+
+    .datingapp {
+        height: 300px;
+    }
+
+    .selvportraet {
+        height: 300px;
+    }
+
+    .plakat {
+        height: 300px;
+    }
+
+    .sprite {
+        height: 300px;
+        width: 300px;
+    }
+    @keyframes play {
+        0%{background-position: -60px;}
+       100% { background-position: -16000px; }
+    }
+
+    input[type=submit] {
+        border: none;
+        color: #020301;
+        background:#F59D37;
+        padding: 15px 32px; 
+        text-align: center; 
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        position: relative;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, 80%);
+        font-family: 'baskerville-urw, serif';
+        cursor: pointer;
+        transition-duration: 0.4s;
+        margin-bottom: 20px;
+    }
+}
+
+.mwbutton {
+    border: none;
+    color: #020301;
+    background:#F59D37;
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0;
+    position: relative;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: 'baskerville-urw, serif';
+    cursor: pointer;
+    transition-duration: 0.4s;  
+}
+
+.mwbutton:hover {
+    background-color: #EB7023;
+    color:#FDFDFD; 
 }
